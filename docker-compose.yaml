@@ -2,7 +2,7 @@ services:
   activepieces:
     image: 'ghcr.io/activepieces/activepieces:latest'
     environment:
-      - SERVICE_FQDN_ACTIVEPIECES
+      - SERVICE_FQDN_ACTIVEPIECES_8080
       - AP_API_KEY=$SERVICE_PASSWORD_64_APIKEY
       - AP_ENCRYPTION_KEY=$SERVICE_PASSWORD_ENCRYPTIONKEY
       - 'AP_ENGINE_EXECUTABLE_PATH=${AP_ENGINE_EXECUTABLE_PATH:-dist/packages/engine/main.js}'
